@@ -1,0 +1,26 @@
+
+> vibe-generated-app@1.0.0 dev
+> vite
+
+
+  VITE v5.4.20  ready in 424 ms
+
+  ➜  Local:   http://localhost:3000/
+  ➜  Network: http://172.20.2.1:3000/
+7:03:03 PM [vite] Pre-transform error: Failed to resolve import "firebase/app" from "src/lib/firebase.js". Does the file exist?
+7:03:10 PM [vite] Internal server error: Failed to resolve import "firebase/app" from "src/lib/firebase.js". Does the file exist?
+  Plugin: vite:import-analysis
+  File: /home/workspace/src/lib/firebase.js:1:32
+  1  |  import { initializeApp } from 'firebase/app'
+     |                                 ^
+  2  |  import { getAuth, GoogleAuthProvider, signInWithPopup, signOut } from 'firebase/auth'
+  3  |  import { getFirestore, collection, addDoc, serverTimestamp } from 'firebase/firestore'
+      at TransformPluginContext._formatError (file:///home/workspace/node_modules/vite/dist/node/chunks/dep-D_zLpgQd.js:49258:41)
+      at TransformPluginContext.error (file:///home/workspace/node_modules/vite/dist/node/chunks/dep-D_zLpgQd.js:49253:16)
+      at normalizeUrl (file:///home/workspace/node_modules/vite/dist/node/chunks/dep-D_zLpgQd.js:64306:23)
+      at async file:///home/workspace/node_modules/vite/dist/node/chunks/dep-D_zLpgQd.js:64438:39
+      at async Promise.all (index 0)
+      at async TransformPluginContext.transform (file:///home/workspace/node_modules/vite/dist/node/chunks/dep-D_zLpgQd.js:64365:7)
+      at async PluginContainer.transform (file:///home/workspace/node_modules/vite/dist/node/chunks/dep-D_zLpgQd.js:49099:18)
+      at async loadAndTransform (file:///home/workspace/node_modules/vite/dist/node/chunks/dep-D_zLpgQd.js:51977:27)
+      at async viteTransformMiddleware (file:///home/workspace/node_modules/vite/dist/node/chunks/dep-D_zLpgQd.js:62105:24)
